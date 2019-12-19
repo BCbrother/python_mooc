@@ -13,10 +13,14 @@
 import re
 
 a = 'pyt hon\t1111&java\r678\nphp'
-# print(a)
+b = "鲍勃在家666"
+
 r1 = re.findall('\w',a)
 print(r1)
 r2 = re.findall('\W',a)
 print(r2)
 r3 = re.findall('\s',a)
 print(r3)
+# 中文也能匹配
+r4 = re.findall('\D',b)
+print(r4)
